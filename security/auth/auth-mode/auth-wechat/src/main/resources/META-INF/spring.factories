@@ -1,0 +1,1 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=lsof.fun.auth.mode.wechat.AutoConfiguration
