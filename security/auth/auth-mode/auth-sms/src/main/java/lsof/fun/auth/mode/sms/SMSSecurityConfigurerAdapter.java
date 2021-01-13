@@ -12,13 +12,8 @@ import org.springframework.stereotype.Service;
 public class SMSSecurityConfigurerAdapter implements IAuthSecurityConfigurer {
 
     public void configure(HttpSecurity http, AuthenticationManager authenticationManager){
-
-        System.out.println(getClass());
-
         http.authenticationProvider(new SMSAuthenticationProvider())
                 .addFilterAt(new SMSAuthenticationFilter(authenticationManager), UsernamePasswordAuthenticationFilter.class)
-
-
                 ;
     }
 }

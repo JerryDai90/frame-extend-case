@@ -12,14 +12,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import java.util.Collection;
 
 @Configuration
-@Order(100)
 public class WebSecurityConfigurerAdapter extends org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter {
-
-
-    public WebSecurityConfigurerAdapter() {
-        System.out.println(getClass());
-
-    }
 
     //由于5.x 版本是无法获取到 AuthenticationManager，需要声明
     @Bean

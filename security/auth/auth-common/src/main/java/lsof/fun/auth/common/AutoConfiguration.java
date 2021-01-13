@@ -7,6 +7,4 @@ import org.springframework.context.annotation.Configuration;
 @Configuration("comm-ac")
 @ComponentScan
 public class AutoConfiguration {
-
-
 }
